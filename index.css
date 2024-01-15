@@ -18,16 +18,19 @@ body{
     margin-left: 1%;
    
 }
-.nav a,nav{
-    font-size: large;
+.nav-item-current,.sign-in,.current{
+    font-size: med;
     color: greenyellow;
     text-decoration: none;
-
-    
+}
+.current{
+    text-decoration: underline;
+    text-underline-offset: 85%;
+    text-decoration-thickness: 20%;
 }
 .nav :nth-child(1){
     margin-right: 10%;
-    margin-left: -22%;
+    margin-left: -25%;
 }
 .nav :nth-child(2){
     margin-left:20%;
@@ -36,6 +39,19 @@ body{
 .sign-in{
     margin-left: 20%;
 }
-.nav a :hover{
-    text-decoration:overline
+.nav :hover{
+    text-underline-offset: 85%;
+    letter-spacing: 1.5px;
+    font-size: larger;
+    display: inline-block;
+    text-decoration-thickness: 20%;
+    text-decoration-color: brown;
+    text-decoration-line:underline;
+    transition: all .5s ease-out;
+    transition-timing-function: ease-out;
+    animation: forwards;
+    
+}
+.nav:hover:past{
+    color: blue;
 }
