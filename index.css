@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(16, 16, 16);
+    margin:0%
+}
+.header{
+    text-transform: uppercase;
+    display: flex;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.369);
+    align-items: center;
+    color: greenyellow;
+    justify-content: space-between;
+    z-index: 100;
+    white-space: nowrap;
+}
+.logo{
+    font-size: x-large;
+    margin-left: 1%;
+   
+}
+.nav a,nav{
+    font-size: large;
+    color: greenyellow;
+    text-decoration: none;
+
+    
+}
+.nav :nth-child(1){
+    margin-right: 10%;
+    margin-left: -22%;
+}
+.nav :nth-child(2){
+    margin-left:20%;
+    margin-right: 10%;
+}
+.sign-in{
+    margin-left: 20%;
+}
+.nav a :hover{
+    text-decoration:overline
+}
