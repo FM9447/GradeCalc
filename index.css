@@ -19,7 +19,7 @@ body{
    
 }
 .nav-item-current,.sign-in,.current{
-    font-size: med;
+    font-size: medium;
     color: greenyellow;
     text-decoration: none;
 }
