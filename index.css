@@ -5,48 +5,42 @@ body{
     overflow:hidden;
 }
 .header{
-    height: 10%;
-    width:101%;
+    height: 10vh;
+    width:101vw;
     text-transform: uppercase;
     display: flex;
     overflow: hidden;
     background-color: rgb(0, 0, 0);
     align-items: center;
     color: greenyellow;
-    justify-content: space-between;
+    justify-content: space-evenly;
     z-index: 100;
     white-space: nowrap;
 }
 
 .logo{
+    position:sticky;
     font-size: x-large;
-    margin-left: 1%;
+    margin-right:25vw;
    
 }
-.nav-item-current,.sign-in,.current,.select{
-    font-size: medium;
+.About,.Home,.select{
+    font-size: large;
     color: greenyellow;
     text-decoration: none;
 }
-.current{
+.Home{
     text-decoration: underline;
     text-underline-offset: 85%;
-    text-decoration-thickness: 20%;
+    text-decoration-thickness: 10%;
 }
-.nav :nth-child(1){
-    padding-right: 10%;
-    
+.nav :nth-child(1){ 
+    padding-right: 1vw;
 }
-.nav :nth-child(2){
-
-}
-.sign-in{
-   
-}
-.nav :hover{
+.nav :hover,.select :hover{
     text-underline-offset: 85%;
     letter-spacing: .5px;
-    font-size: large;
+    font-size: larger;
     display: inline-block;
     position: static;
     text-decoration-color: brown;
@@ -66,9 +60,12 @@ body{
     border:none;
 }
 .nav{
-    margin-left: -50%;
-    word-spacing: 10%;
-    border:solid blue;
-    display: flexbox;
     justify-content: space-evenly;
+    padding-right:1vw;
+    margin-left: 38vw;
+    border-spacing: 10vw;
+}
+
+.select:hover{
+    background-color:rgba(0, 0, 0, 0.894);
 }
