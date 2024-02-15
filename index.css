@@ -34,22 +34,21 @@ body{
     text-decoration-thickness: 20%;
 }
 .nav :nth-child(1){
-    margin-right: 10%;
-    margin-left: -25%;
+    padding-right: 10%;
+    
 }
 .nav :nth-child(2){
-    margin-left:20%;
-    margin-right: 10%;
+
 }
 .sign-in{
-    margin-left: 20%;
+   
 }
 .nav :hover{
     text-underline-offset: 85%;
-    letter-spacing: 1.5px;
-    font-size: larger;
+    letter-spacing: .5px;
+    font-size: large;
     display: inline-block;
-    text-decoration-thickness: 20%;
+    position: static;
     text-decoration-color: brown;
     text-decoration-line:underline;
     transition: all .5s ease-out;
@@ -57,9 +56,7 @@ body{
     animation: forwards;
     
 }
-.nav:hover:past{
-    color: blue;
-}
+
 .iframe-container{
     width: 100svw;
     height: 90svh;
@@ -67,4 +64,11 @@ body{
 .select{
     background-color: black;
     border:none;
+}
+.nav{
+    margin-left: -50%;
+    word-spacing: 10%;
+    border:solid blue;
+    display: flexbox;
+    justify-content: space-evenly;
 }
