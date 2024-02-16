@@ -1,8 +1,12 @@
 
 body{
-    background-color: rgb(255, 255, 255);
+    color:chocolate;
+    background-color: rgb(10, 10, 10);
     margin:0%;
     overflow:hidden;
+}
+.header{
+    box-shadow: 2% solid greenyellow;
 }
 .header{
     height: 10vh;
