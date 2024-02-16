@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="GradeCalc" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+  <script src="script.js"></script>
     <header class="header">
         <h2 class="logo"><b>ONLINE COMPILER</b></h2>
     <div class="nav">
         <a href="#" class="Home"><b>Home</b></a>
         <a href="#"class="About"><b>About us</b></a>
-        <select class="select">
-            <div class="option">
-                <option><a href="python.html" ><b>Python</b></a></option>
-                <option selected><a href="c.html" ><b>C</b></a></option>
-                <option><a href="java.html" ><b>Java</b></a></option>
+        <select class="select" id="selected"  onchange="selectLanguage()">
+            <div class="option" id="option">
+                <option selected value="python.html"><b>Python</b></option>
+                <option value="c.html"><b>C</b></option>
+                <option value="java.html"><b>Java</b></option>
             </div>
         </select>
     </div>
@@ -25,10 +26,11 @@
         <iframe
             frameBorder="0"
             height="100%"
-            src="https://onecompiler.com/embed/C?theme=dark&hideNew=true&hideLanguageSelection=true"
+            src="https://onecompiler.com/embed/c?theme=dark&hideNew=true&hideLanguageSelection=true"
             width="100%"
             theme=dark
           ></iframe>
     </div>
 </body>
 </html>
+
