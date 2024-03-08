@@ -1,7 +1,9 @@
 
 body{
     color:chocolate;
-    background-color: rgb(10, 10, 10);
+    background-image: url("Compiler-background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
     margin:0%;
     overflow:hidden;
 }
@@ -9,12 +11,12 @@ body{
     box-shadow: 2% solid greenyellow;
 }
 .header{
-    height: 10vh;
+    box-shadow: 0px 5.5px 10px 1px black;
     width:101vw;
     text-transform: uppercase;
     display: flex;
     overflow: hidden;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.509);
     align-items: center;
     color: greenyellow;
     justify-content: space-evenly;
@@ -23,7 +25,7 @@ body{
 }
 
 .logo{
-    position:sticky;
+    position:relative;
     font-size: x-large;
     margin-right:25vw;
    
@@ -56,8 +58,9 @@ body{
 }
 
 .iframe-container{
+    opacity: 0.97;
     width: 100svw;
-    height: 90svh;
+    height: 100svh;
 }
 .select{
     background-color: black;
@@ -72,4 +75,59 @@ body{
 
 .select:hover{
     background-color:rgba(0, 0, 0, 0.894);
+}
+.main{
+    overflow-y: scroll;
+    color:darkred;
+    text-align: center;
+    margin-right: 1.8%;
+    margin-top: -24.3%;
+    height: 100vh;
+    width:61.5%;
+    float: right;
+    box-shadow: 0px 0px 20px 3px black;
+    background-color: rgba(54, 190, 231, 0.472);
+}
+.section_1{
+    align-items: center;
+    justify-content: space-evenly;
+    display: inline;
+    width:100%;
+    position: relative;
+    height: 70%;
+}
+.text_1{
+    text-align: center;
+    color:gold;
+    animation:test 1s ease-in-out forwards;
+    text-align: left;
+}
+.img_1{
+    height:100%;
+    width:40vw;
+    float: right;
+    margin-top: -10%;
+
+}
+.text-1{
+    font-size: x-large;
+    margin-top: 17%;
+}
+
+.content{
+    border-spacing: 10%;
+    display: block;
+    overflow:auto;
+}
+@keyframes test {
+    0%{
+        margin-left:-20%;
+    }
+    100%{
+        margin-left: 3%;
+    }
+}
+ul{
+    text-align: start;
+    list-style-type: none;
 }
