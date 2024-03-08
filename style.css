@@ -77,16 +77,16 @@ body{
     background-color:rgba(0, 0, 0, 0.894);
 }
 .main{
+    animation: font 2.8s linear forwards alternate;
     overflow-y: scroll;
-    color:darkred;
+    color:rgba(139, 0, 0, 0);
     text-align: center;
     margin-right: 1.8%;
-    margin-top: -24.3%;
     height: 100vh;
-    width:61.5%;
     float: right;
     box-shadow: 0px 0px 20px 3px black;
     background-color: rgba(54, 190, 231, 0.472);
+    animation-delay: 1.70ms;
 }
 .section_1{
     align-items: center;
@@ -99,7 +99,8 @@ body{
 .text_1{
     text-align: center;
     color:gold;
-    animation:test 1s ease-in-out forwards;
+    animation:welcome 1.5s ease-in-out forwards;
+    animation-delay: 100ms;
     text-align: left;
 }
 .img_1{
@@ -119,7 +120,7 @@ body{
     display: block;
     overflow:auto;
 }
-@keyframes test {
+@keyframes welcome{
     0%{
         margin-left:-20%;
     }
@@ -127,7 +128,32 @@ body{
         margin-left: 3%;
     }
 }
+@keyframes font{
+    0%{
+        width:0%;
+        margin-top:-300%;
+    }
+    50%{
+        margin-top: -24.3%;
+    }
+    100%{
+        margin-top: -24.3%;
+        width:61.5%;;
+    }
+}
+@keyframes text{
+    0%{
+        color:rgba(139, 0, 0, 0);
+    }
+    100%{
+        color:darkred;
+    }
+}
 ul{
     text-align: start;
     list-style-type: none;
+}
+.text{
+    animation: text 1.7s ease-in-out forwards alternate;
+    animation-delay: 2520ms;
 }
