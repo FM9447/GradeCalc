@@ -16,7 +16,7 @@ body{
     text-transform: uppercase;
     display: flex;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.509);
+    background-color: rgba(0, 0, 0, 0.861);
     align-items: center;
     color: greenyellow;
     justify-content: space-evenly;
@@ -27,15 +27,15 @@ body{
 .logo{
     position:relative;
     font-size: x-large;
-    margin-right:25vw;
+    margin-right:21vw;
    
 }
-.About,.Home,.select{
+.not-current,.current,.select{
     font-size: large;
     color: greenyellow;
     text-decoration: none;
 }
-.Home{
+.current{
     text-decoration: underline;
     text-underline-offset: 85%;
     text-decoration-thickness: 10%;
@@ -43,7 +43,7 @@ body{
 .nav :nth-child(1){ 
     padding-right: 1vw;
 }
-.nav :hover,.select :hover{
+.nav :hover,.select:not(:active){
     text-underline-offset: 85%;
     letter-spacing: .5px;
     font-size: larger;
@@ -73,8 +73,9 @@ body{
     border-spacing: 10vw;
 }
 
-.select:hover{
-    background-color:rgba(0, 0, 0, 0.894);
+.select:visited{
+    border:solid black;
+    background-color:rgb(0, 0, 0);
 }
 .main{
     animation: font 2.8s linear forwards alternate;
@@ -83,8 +84,8 @@ body{
     text-align: center;
     height: 100vh;
     float: right;
-    box-shadow: 0px 0px 20px 3px black;
-    background-color: rgba(54, 190, 231, 0.472);
+    box-shadow: -4px 3px 8px 4px black;
+    background-color: rgba(0, 0, 0, 0.844);
     animation-delay: 1.70ms;
 }
 .section_1{
@@ -95,25 +96,23 @@ body{
     position: relative;
     height: 70%;
 }
-.text_1{
+.text_1,.text_2{
     text-align: center;
     color:gold;
-    animation:welcome 1.5s ease-in-out forwards;
-    animation-delay: 100ms;
     text-align: left;
-}
-.img_1{
-    height:100%;
-    width:40vw;
-    float: right;
-    margin-top: -10%;
-
 }
 .text-1{
     font-size: 150%;
-    margin-top: 17%;
+    margin-top: 13%;
 }
-
+.text_1{
+    animation:welcome 1.5s ease-in-out forwards,color-loop 26s linear  infinite; 
+    animation-delay: 100ms;
+}
+.text_2{
+    animation:welcome1 1.5s ease-in-out forwards,color-loop 26s linear  infinite; 
+    animation-delay: 100ms,;
+}
 .content{
     border-spacing: 10%;
     display: block;
@@ -124,7 +123,15 @@ body{
         margin-left:-20%;
     }
     100%{
-        margin-left: 3%;
+        margin-left: 1.5%;
+    }
+}
+@keyframes welcome1{
+    0%{
+        margin-left:-20%;
+    }
+    100%{
+        margin-left: 4.5%;
     }
 }
 @keyframes font{
@@ -133,12 +140,14 @@ body{
         margin-top:-300%;
     }
     50%{
-        margin-top: -25.92%;
+        margin-top: -28.43%;
     }
     100%{
-        margin-top: -25.9%;
-        width:61.5%;;
+        margin-top: -28.43%;
+        width:55.5%;
+        
     }
+    
 }
 @keyframes text{
     0%{
@@ -155,4 +164,83 @@ ul{
 .text{
     animation: text 1.7s ease-in-out forwards alternate;
     animation-delay: 2520ms;
+}
+.lan-select{
+    margin-top:2%;
+    text-align: center;
+    border-width: .25vw;
+    margin-left:2%;
+    font-weight: bolder;
+    color: black;
+    border-style: solid;
+    border-color: greenyellow;
+    padding:1% 2%;
+    border-radius:5vh;
+    font-size: large;
+    background-color: rgba(0, 0, 0, 0.063);
+    width:fit-content;
+}
+.lan-select:hover{
+    animation: lan-hover 250ms ease-out forwards alternate;
+}
+@keyframes lan-hover{
+    0%{
+    
+    }
+    100%{
+    border-width: 0.5px;
+    border-color:rgb(23, 31, 13);
+    margin-bottom: 20px;
+    background-color: greenyellow;
+    box-shadow: 6px 5px 5px 1.5px black ;
+    }
+}
+@keyframes lan-hover1{
+    0%{
+    
+    }
+    100%{
+    border-width: 0.5px;
+    border-color:rgb(23, 31, 13);
+    background-color: black;
+    box-shadow: 0px 0px 2px 5px greenyellow
+    }
+}
+@keyframes color-loop{
+    0%{
+        color:gold;
+    }
+    8.333%{
+        color: orange;
+    }
+    16.666%{
+        color: red;
+    }
+    25%{
+        color: pink;
+    }
+    33.333%{
+        color: blue;
+    }
+    41.666%{
+        color: indigo;
+    }
+    58.333%{
+        color: violet;
+    }
+    66.666%{
+        color: teal;
+    }
+    75%{
+        color: limegreen;
+    }
+    83.333%{
+        color: green;
+    }
+    91.666%{
+        color: yellow;
+    }
+    100%{
+       color: rgb(255, 165, 80);
+    }
 }

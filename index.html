@@ -7,7 +7,7 @@
     <title>Document</title>
     <style>
         body{
-            background-image:url("home-background.jpeg");
+            background-image:url("back-2.jpg");
         }
         p{
             font-style: italic;
@@ -21,8 +21,8 @@
     <header class="header">
         <h2 class="logo"><b>ONLINECOMPILER-BASE</b></h2>
     <div class="nav">
-        <a href="index.html" class="Home"><b>Home</b></a>
-        <a href="about_us.html"class="About"><b>About us</b></a>
+        <a href="index.html" class="current"><b>Home</b></a>
+        <a href="about_us.html"class="not-current"><b>About us</b></a>
         <select class="select" id="selected"  onchange="selectLanguage()">
             <div class="option" id="option">
                 <option selected disabled hidden>Language</option>
@@ -34,63 +34,73 @@
     </div>
     </header>
     <div class="content">
-    <div class="section_1">
-        <div class="text-1">
-            <h1 class="text_1" style="margin-left:3%;">WELCOME TO</h1>
-            <h1 class="text_1" style="margin-left:6%;"> ONLINECOMPILER-BASE</h1>
+        <div class="section_1">
+            <div class="text-1">
+                <h1 class="text_1" >WELCOME TO</h1>
+                <h1 class="text_2" id="text1">ONLINECOMPILER-BASE</h1>
+            </div>
+        
+            <div class="main">
+                <div class="text">
+                    </br>
+                    </br>
+                    <h1><b>Welcome to our OnlineCompiler-BASE</b></h1>
+                    <h3> your all-in-one coding platform designed to streamline your coding experience
+                    Whether you're a seasoned developer or just starting your coding journey, our platform offers a user-friendly interface and powerful features to enhance your coding efficiency.</h3>
+                    <ul>
+                        <li><h2><b>KEY FEATURES:</b></h2>
+                            <ul>
+                                <dl>
+                                    <dt><h3>Clean and User-Friendly Interface:</h3></dt>
+                                    <dd><h4>Experience a clutter-free coding environment with an intuitive user interface.</h4></dd>
+                                    <dd><h4>Navigate seamlessly with our user-friendly design, allowing you to focus on what you do best – coding.</h4></dd>
+                                </dl>
+                                <dl>
+                                    <dt><h3>Language Versatility:</h3></dt>
+                                    <dd><h4>Choose from a variety of programming languages, including Python, C, and Java.</h4></dd>
+                                    <dd><h4>Our language selection dropdown ensures you have the flexibility to code in your preferred language.</h4></dd>
+                                </dl>
+                                <dl>
+                                    <dt><h3>No Login Requirement:</h3></dt>
+                                    <dd><h4>One of our distinct advantages is the absence of a mandatory login</h4></dd>
+                                    <dd><h4> Enjoy instant access to the coding environment without the need for cumbersome account creation</h4></dd>
+                                    <dd><h4>Jump right into coding hassle-free.</h4></dd>
+                                </dl>
+                                <dl>
+                                    <dt><h3>Navigation Clarity:</h3></dt>
+                                    <dd><h4>Our platform prioritizes Navigation Clarity, ensuring that users can effortlessly move between different sections of the online compiler.</h4></dd>
+                                    <dd><h4>The Home and About Us links in the header provide straightforward access, enhancing the overall user experience.</h4></dd>
+                                </dl>
+                                <dl>
+                                    <dt><h3>Ease of Access:</h3></dt>
+                                    <dd><h4>We pride ourselves on providing unparalleled ease of access.</h4></dd>
+                                    <dd><h4>With just a web browser, you can dive into coding from anywhere, eliminating the need for local installations.</h4></dd>
+                                    <dd><h4>Experience the convenience of coding at your fingertips.</h4></dd>
+                                </dl>
+                                <dl>
+                                    <dt><h3>Cross-Browser Compatibility:</h3></dt>
+                                    <dd><h4>Our Online Compiler ensures compatibility across various web browsers, offering a consistent and reliable experience. Whether you prefer Chrome, Firefox or Edge our platform delivers optimal performance.</h4></dd>
+                                </dl>
+                                <dl>
+                                    <dt><h3>Platform Compatibility:</h3></dt>
+                                    <dd><h4>Enjoy the flexibility of coding on your preferred operating system. Our Online Compiler is compatible with Windows, macOS, and Linux, ensuring a seamless experience on your chosen platform.</h4></dd>
+                                </dl>
+                                <dl>
+                                    <dt><h3>Embedded Code Examples:</h3></dt>
+                                    <dd><h4>Accelerate your coding journey with embedded code examples.</h4></dd>
+                                    <dd><h4>Access a collection of templates and snippets directly within the platform, providing valuable guidance for various programming tasks.</h4></dd>
+                                </dl>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    
-        <div class="main">
-            <div class="text">
-                <h1><b>Welcome to our OnlineCompiler-BASE</b></h1>
-                <h2> your all-in-one coding platform designed to streamline your coding experience
-                Whether you're a seasoned developer or just starting your coding journey, our platform offers a user-friendly interface and powerful features to enhance your coding efficiency.</h2>
-                <ul>
-                    <li><h2><b>KEY FEATURES:</b></h2>
-                        <ul>
-                            <dl>
-                                <dt><h3>Clean and User-Friendly Interface:</h3></dt>
-                                <dd><h4>Experience a clutter-free coding environment with an intuitive user interface.</h4></dd>
-                                <dd><h4>Navigate seamlessly with our user-friendly design, allowing you to focus on what you do best – coding.</h4></dd>
-                            </dl>
-                            <dl>
-                                <dt><h3>Language Versatility:</h3></dt>
-                                <dd><h4>Choose from a variety of programming languages, including Python, C, and Java.</h4></dd>
-                                <dd><h4>Our language selection dropdown ensures you have the flexibility to code in your preferred language.</h4></dd>
-                            </dl>
-                            <dl>
-                                <dt><h3>No Login Requirement:</h3></dt>
-                                <dd><h4>One of our distinct advantages is the absence of a mandatory login</h4></dd>
-                                <dd><h4> Enjoy instant access to the coding environment without the need for cumbersome account creation</h4></dd>
-                                <dd><h4>Jump right into coding hassle-free.</h4></dd>
-                            </dl>
-                            <dl>
-                                <dt><h3>Navigation Clarity:</h3></dt>
-                                <dd><h4>Our platform prioritizes Navigation Clarity, ensuring that users can effortlessly move between different sections of the online compiler.</h4></dd>
-                                <dd><h4>The Home and About Us links in the header provide straightforward access, enhancing the overall user experience.</h4></dd>
-                            </dl>
-                            <dl>
-                                <dt><h3>Ease of Access:</h3></dt>
-                                <dd><h4>We pride ourselves on providing unparalleled ease of access.</h4></dd>
-                                <dd><h4>With just a web browser, you can dive into coding from anywhere, eliminating the need for local installations.</h4></dd>
-                                <dd><h4>Experience the convenience of coding at your fingertips.</h4></dd>
-                            </dl>
-                            <dl>
-                                <dt><h3>Cross-Browser Compatibility:</h3></dt>
-                                <dd><h4>Our Online Compiler ensures compatibility across various web browsers, offering a consistent and reliable experience. Whether you prefer Chrome, Firefox or Edge our platform delivers optimal performance.</h4></dd>
-                            </dl>
-                            <dl>
-                                <dt><h3>Platform Compatibility:</h3></dt>
-                                <dd><h4>Enjoy the flexibility of coding on your preferred operating system. Our Online Compiler is compatible with Windows, macOS, and Linux, ensuring a seamless experience on your chosen platform.</h4></dd>
-                            </dl>
-                            <dl>
-                                <dt><h3>Embedded Code Examples:</h3></dt>
-                                <dd><h4>Accelerate your coding journey with embedded code examples.</h4></dd>
-                                <dd><h4>Access a collection of templates and snippets directly within the platform, providing valuable guidance for various programming tasks.</h4></dd>
-                            </dl>
-                        </ul>
-                    </li>
-                </ul>
+        <div class="language-field">
+                    <button class="lan-select" onclick="window.location.assign('python.html');" style="margin-right: 4%; margin-left: 5%;"><b>Python</b></button>
+                    <button class="lan-select" onclick="window.location.assign('c.html');" style="margin-right: 4%;"><b>C</b></button>
+                    <button class="lan-select" onclick="window.location.assign('java.html');"><b>Java</b></button>
+                </div>
             </div>
         </div>
     </div>
