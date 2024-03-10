@@ -7,12 +7,17 @@ body{
     margin:0%;
     overflow:hidden;
 }
+p{
+    font-style: italic;
+    text-align: center;
+    font-size: larger;
+}
 .header{
     box-shadow: 2% solid greenyellow;
 }
 .header{
     box-shadow: 0px 5.5px 10px 1px black;
-    width:101vw;
+    width:100vw;
     text-transform: uppercase;
     display: flex;
     overflow: hidden;
@@ -20,14 +25,16 @@ body{
     align-items: center;
     color: greenyellow;
     justify-content: space-evenly;
-    z-index: 100;
+    z-index: 1;
     white-space: nowrap;
+    height: 9vh;
 }
 
 .logo{
+    float: left;
     position:relative;
     font-size: x-large;
-    margin-right:21vw;
+    margin-right:17vw;
    
 }
 .not-current,.current,.select{
@@ -62,13 +69,16 @@ body{
     width: 100svw;
     height: 100svh;
 }
-.select{
+.select {
+    background-color: rgba(0, 0, 0, 0);   
+}
+option{
     background-color: black;
-    border:none;
+    border:black;
+    box-shadow: 4px 4px 6px 4px rgb(185, 43, 43);
 }
 .nav{
     justify-content: space-evenly;
-    padding-right:1vw;
     margin-left: 38vw;
     border-spacing: 10vw;
 }
@@ -78,15 +88,16 @@ body{
     background-color:rgb(0, 0, 0);
 }
 .main{
+    margin-top:-200vh;
     animation: font 2.8s linear forwards alternate;
     overflow-y: scroll;
     color:rgba(139, 0, 0, 0);
     text-align: center;
-    height: 100vh;
+    height: 100vb;
     float: right;
     box-shadow: -4px 3px 8px 4px black;
     background-color: rgba(0, 0, 0, 0.844);
-    animation-delay: 1.70ms;
+    animation-delay: 6s;
 }
 .section_1{
     align-items: center;
@@ -102,53 +113,113 @@ body{
     text-align: left;
 }
 .text-1{
-    font-size: 150%;
-    margin-top: 13%;
+    font-size: 1.5vw;
 }
 .text_1{
-    animation:welcome 1.5s ease-in-out forwards,color-loop 26s linear  infinite; 
-    animation-delay: 100ms;
+    white-space:nowrap;
+    overflow: hidden;
+    margin-top:30vh;
+    animation:welcome-home 8s steps(800) forwards,color-loop-welcome-home 26s linear  infinite; 
+    animation-delay: 0ms;
 }
 .text_2{
-    animation:welcome1 1.5s ease-in-out forwards,color-loop 26s linear  infinite; 
+    width: 0%;
+    white-space:nowrap;
+    overflow: hidden;
+    animation:welcome1-home 6s  steps(800) forwards,color-loop-welcome-home 26s linear  infinite; 
+    animation-delay: 4.2s,0ms;
+}
+.text_3{
+    animation:welcome2-home 1.5s ease-in-out forwards,color-loop-welcome-home 26s linear  infinite; 
     animation-delay: 100ms,;
 }
 .content{
     border-spacing: 10%;
     display: block;
-    overflow:auto;
 }
-@keyframes welcome{
+@keyframes welcome-home{
+    0% {
+        width:3.02%;
+        margin-left:-20%;
+    }
+    35%{ 
+        width:3.02%;
+        margin-left:1.5%;
+    }
+    100% {
+        width:100%;
+        margin-left:1.5%;
+    }
+}
+@keyframes welcome1-home{
+    0% {
+        width:0%;
+        margin-left:4.5%;
+    }
+    3%{
+        width:2.2%;
+        margin-left:4.5%
+        
+    }
+    100% {
+        width:100%;
+        margin-left:4.5%;
+    }
+}
+@keyframes welcome2-home{
     0%{
+
         margin-left:-20%;
     }
     100%{
-        margin-left: 1.5%;
-    }
-}
-@keyframes welcome1{
-    0%{
-        margin-left:-20%;
-    }
-    100%{
-        margin-left: 4.5%;
+        margin-left: 7.5%;
     }
 }
 @keyframes font{
     0%{
         width:0%;
-        margin-top:-300%;
+        margin-top:-200vh;
     }
     50%{
-        margin-top: -28.43%;
+        margin-top: -53.7vh;
+    }
+    60%{
+        margin-top: -53.7vh;
     }
     100%{
-        margin-top: -28.43%;
+        margin-top: -53.7vh;
         width:55.5%;
         
     }
     
 }
+/*@media screen and  (width  500px){
+    .main{
+        animation: font-mobile 2.8s linear forwards alternate;
+        overflow-y: scroll;
+        color:rgba(139, 0, 0, 0);
+        text-align: center;
+        height: 100vb;
+        float: right;
+        box-shadow: -4px 3px 8px 4px black;
+        background-color: rgba(18, 210, 79, 0.844);
+        animation-delay: 1.70ms;
+    }
+    @keyframes font-mobile{
+        0%{
+            width:0%;
+            margin-top:-200vh;
+        }
+        50%{
+            margin-top: -10vh;
+        }
+        100%{
+            margin-top: 10vh;
+            width:55.5%;
+            
+        }
+    }
+}*/
 @keyframes text{
     0%{
         color:rgba(139, 0, 0, 0);
@@ -162,8 +233,10 @@ ul{
     list-style-type: none;
 }
 .text{
-    animation: text 1.7s ease-in-out forwards alternate;
-    animation-delay: 2520ms;
+    margin-top:10vh;
+    margin-bottom: 10vh;
+    animation: text 1.7s linear forwards;
+    animation-delay: 9s;
 }
 .lan-select{
     margin-top:2%;
@@ -171,7 +244,8 @@ ul{
     border-width: .25vw;
     margin-left:2%;
     font-weight: bolder;
-    color: black;
+    color: greenyellow;
+    animation: color-loop-button 40s linear infinite, button-appear 8s linear forwards ;
     border-style: solid;
     border-color: greenyellow;
     padding:1% 2%;
@@ -179,35 +253,32 @@ ul{
     font-size: large;
     background-color: rgba(0, 0, 0, 0.063);
     width:fit-content;
+    opacity: 1;
 }
 .lan-select:hover{
-    animation: lan-hover 250ms ease-out forwards alternate;
+    animation: lan-hover 250ms ease-out forwards alternate, color-loop-button 30s linear infinite;
+    animation-delay: 0ms;
+    transition: box-shadow 0.s linear ;
 }
 @keyframes lan-hover{
     0%{
-    
+    opacity: 1;
     }
     100%{
     border-width: 0.5px;
-    border-color:rgb(23, 31, 13);
+    opacity: 1;
+    border-width: 3px;
     margin-bottom: 20px;
-    background-color: greenyellow;
-    box-shadow: 6px 5px 5px 1.5px black ;
-    }
-}
-@keyframes lan-hover1{
-    0%{
-    
-    }
-    100%{
-    border-width: 0.5px;
-    border-color:rgb(23, 31, 13);
     background-color: black;
-    box-shadow: 0px 0px 2px 5px greenyellow
+    box-shadow: 0px 4px 4px black, 0 0 0 white, 0px 4px 4px black;
     }
 }
-@keyframes color-loop{
+
+@keyframes color-loop-welcome-home{
     0%{
+        color:greenyellow;
+    }
+    4.1666%{
         color:gold;
     }
     8.333%{
@@ -242,5 +313,54 @@ ul{
     }
     100%{
        color: rgb(255, 165, 80);
+    }
+}
+@keyframes color-loop-button{
+    0%{
+        border-color: greenyellow;
+    }
+    4.1666%{
+        border-color:gold;
+    }
+    8.333%{
+        border-color: orange;
+    }
+    16.666%{
+        border-color: red;
+    }
+    25%{
+        border-color: pink;
+    }
+    33.333%{
+        border-color: blue;
+    }
+    41.666%{
+        border-color: indigo;
+    }
+    58.333%{
+        border-color: violet;
+    }
+    66.666%{
+        border-color: teal;
+    }
+    75%{
+        border-color: limegreen;
+    }
+    83.333%{
+        border-color: greenyellow;
+    }
+    91.666%{
+        border-color: yellow;
+    }
+    100%{
+        border-color: rgb(255, 165, 80);
+    }
+}
+@keyframes button-appear{
+    0%{
+        opacity:0.1;
+    }
+    100%{
+        opacity: 1;
     }
 }
