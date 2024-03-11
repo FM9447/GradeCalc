@@ -119,6 +119,8 @@ option{
     white-space:nowrap;
     overflow: hidden;
     margin-top:30vh;
+    font-style: italic;
+    text-shadow: 0px 0px 3px 5px black;
     animation:welcome-home 8s steps(800) forwards,color-loop-welcome-home 26s linear  infinite; 
     animation-delay: 0ms;
 }
@@ -126,11 +128,14 @@ option{
     width: 0%;
     white-space:nowrap;
     overflow: hidden;
+    font-style: italic;
+    text-shadow: 0px 0px 3px 5px black;
     animation:welcome1-home 6s  steps(800) forwards,color-loop-welcome-home 26s linear  infinite; 
-    animation-delay: 4.2s,0ms;
+    animation-delay: 3.7s,0ms;
 }
 .text_3{
-    animation:welcome2-home 1.5s ease-in-out forwards,color-loop-welcome-home 26s linear  infinite; 
+    font-style: italic;
+    animation:welcome2-home 1.5s ease-in-out forwards,color-loop-welcome-home 24s linear  infinite; 
     animation-delay: 100ms,;
 }
 .content{
@@ -139,11 +144,11 @@ option{
 }
 @keyframes welcome-home{
     0% {
-        width:3.02%;
+        width:2.6%;
         margin-left:-20%;
     }
     35%{ 
-        width:3.02%;
+        width:2.6%;
         margin-left:1.5%;
     }
     100% {
@@ -156,7 +161,7 @@ option{
         width:0%;
         margin-left:4.5%;
     }
-    3%{
+    1%{
         width:2.2%;
         margin-left:4.5%
         
@@ -225,7 +230,7 @@ option{
         color:rgba(139, 0, 0, 0);
     }
     100%{
-        color:darkred;
+        color:rgb(255, 60, 0);
     }
 }
 ul{
@@ -245,7 +250,7 @@ ul{
     margin-left:2%;
     font-weight: bolder;
     color: greenyellow;
-    animation: color-loop-button 40s linear infinite ;
+    animation: color-loop-button 40s linear infinite;
     border-style: solid;
     border-color: greenyellow;
     padding:1% 2%;
@@ -255,7 +260,7 @@ ul{
     width:fit-content;
 }
 .lan-select:hover{
-    animation: lan-hover 250ms ease-out forwards alternate, color-loop-button 40s linear infinite;
+    animation: lan-hover 250ms ease-out forwards alternate, color-loop-button 30s linear infinite;
     animation-delay: 0ms;
     transition: box-shadow 0.s linear ;
 }
@@ -270,6 +275,7 @@ ul{
     box-shadow: 0px 4px 4px black, 0 0 0 white, 0px 4px 4px black;
     }
 }
+
 @keyframes color-loop-welcome-home{
     0%{
         color:greenyellow;
@@ -350,5 +356,41 @@ ul{
     }
     100%{
         border-color: rgb(255, 165, 80);
+    }
+}
+@keyframes button-appear{
+    40%{
+        opacity:0.1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.language-field{
+    opacity: 0;
+    animation: button-appear 8s linear forwards ;
+}
+.head{
+    animation: text-head 1.7s linear forwards;
+    animation-delay: 9s;
+}
+.sub-head{
+    animation: text-sub 1.7s linear forwards;
+    animation-delay: 9s;
+}
+@keyframes text-head{
+    0%{
+        color:rgba(139, 0, 0, 0);
+    }
+    100%{
+        color:rgb(255, 140, 0);
+    }
+}
+@keyframes text-sub{
+    0%{
+        color:rgba(139, 0, 0, 0);
+    }
+    100%{
+        color:rgb(255, 98, 0);
     }
 }
