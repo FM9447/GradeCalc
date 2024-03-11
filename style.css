@@ -183,19 +183,50 @@ option{
 @keyframes font{
     0%{
         width:0%;
-        margin-top:-200vh;
+        margin-top: -200vh;
     }
     50%{
-        margin-top: -53.7vh;
+        margin-top: -25.9%;
     }
     60%{
-        margin-top: -53.7vh;
+        margin-top: -25.9%;
     }
     100%{
-        margin-top: -53.7vh;
+        margin-top: -25.9%;
         width:55.5%;
         
     }
+    
+}
+@media screen and (width < 1850px  ) and ( height < 836 ) {
+    .main{
+        margin-top:-200vh;
+        animation: font 2.8s linear forwards alternate;
+        overflow-y: scroll;
+        color:rgba(139, 0, 0, 0);
+        text-align: center;
+        height: 100vb;
+        float: right;
+        box-shadow: -4px 3px 8px 4px black;
+        background-color: rgba(0, 0, 0, 0.844);
+        animation-delay: 6s;
+    }
+    @keyframes font{
+        0%{
+            width:0%;
+            margin-top: -200vh;
+        }
+        50%{
+            margin-top: -25.9%;
+        }
+        60%{
+            margin-top: -25.9%;
+        }
+        100%{
+            margin-top: -10.9%;
+            width:55.5%;
+            
+        }
     
 }
 /*@media screen and  (width  500px){
@@ -223,8 +254,8 @@ option{
             width:55.5%;
             
         }
-    }
-}*/
+    }*/
+}
 @keyframes text{
     0%{
         color:rgba(139, 0, 0, 0);
@@ -238,7 +269,7 @@ ul{
     list-style-type: none;
 }
 .text{
-    margin-top:10vh;
+    margin-top:5vh;
     margin-bottom: 10vh;
     animation: text 1.7s linear forwards;
     animation-delay: 9s;
