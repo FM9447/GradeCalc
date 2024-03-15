@@ -70,11 +70,10 @@ p{
     height: 100svh;
 }
 .select {
-    background-color: rgba(0, 0, 0, 0);   
+    background-color: rgba(0, 0, 0, 0.69);   
 }
 option{
-    background-color: black;
-    border:black;
+    background-color: rgba(0, 0, 0, 0.69);   
     box-shadow: 4px 4px 6px 4px rgb(185, 43, 43);
 }
 .nav{
@@ -91,6 +90,7 @@ option{
     margin-top:-200vh;
     animation: font 2.8s linear forwards alternate;
     overflow-y: scroll;
+    overflow-x:hidden;
     color:rgba(139, 0, 0, 0);
     text-align: center;
     height: 100vb;
@@ -186,19 +186,19 @@ option{
         margin-top: -200vh;
     }
     50%{
-        margin-top: -25.9%;
+        margin-top: -24.47%;
     }
     60%{
-        margin-top: -25.9%;
+        margin-top: -24.47%;
     }
     100%{
-        margin-top: -25.9%;
+        margin-top: -24.47%;
         width:55.5%;
         
     }
     
 }
-@media screen and (width < 1850px  ) and ( height < 836 ) {
+/*@media screen and (width < 1850px  ) and ( height < 836 ) {
     .main{
         margin-top:-200vh;
         animation: font 2.8s linear forwards alternate;
@@ -228,7 +228,7 @@ option{
             
         }
     
-}
+}*/
 /*@media screen and  (width  500px){
     .main{
         animation: font-mobile 2.8s linear forwards alternate;
@@ -254,8 +254,8 @@ option{
             width:55.5%;
             
         }
-    }*/
-}
+    }
+}*/
 @keyframes text{
     0%{
         color:rgba(139, 0, 0, 0);
@@ -423,5 +423,19 @@ ul{
     }
     100%{
         color:rgb(255, 98, 0);
+    }
+}
+.link{
+    animation: text-link 1.7s linear forwards;
+    text-decoration:none;
+    animation-delay: 9s;
+    color:rgba(255, 47, 85, 0);
+}
+@keyframes text-link{
+    0%{
+        color:rgba(255, 47, 85, 0);
+    }
+    100%{
+        color:rgb(255, 47, 85);
     }
 }
